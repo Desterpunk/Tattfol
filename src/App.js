@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { GlobalStyle } from './styles/globalStyle';
 import NavBar from './components/navbar/NavBar';
+import Banner from './sections/banner/Banner';
 
 const AppContainer = styled.div`
   width: 100%;
@@ -18,6 +19,9 @@ function App() {
         <header>
           <NavBar/>
         </header>
+        <main>
+          <Banner/>
+        </main>
       </AppContainer>
     </div>
   );
