@@ -6,7 +6,7 @@ import { Flex } from '../flex';
 const SocialMedia = () => {
     return (
         <Container>
-            <Anchor href="tel:+5732133917203">+57 3213391720</Anchor>
+            <Anchor href="tel:++57 310 6595083">+57 310 6595083</Anchor>
             <Divider />
             <Flex>
                 <Anchor

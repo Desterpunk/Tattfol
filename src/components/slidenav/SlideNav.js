@@ -35,7 +35,7 @@ const SlideNav = ({ isOpen, onClick }) => {
             <FaFacebook
               style={{ color: 'rgba(255,255,255)', fontSize: '18px' }} />
           </Anchor>
-          <Anchor href="tel:+57 3213391720">
+          <Anchor href="tel:+57 310 6595083">
             <FaPhone style={{ color: 'rgba(255,255,255)', fontSize: '18px' }} />
           </Anchor>
         </Flex>
