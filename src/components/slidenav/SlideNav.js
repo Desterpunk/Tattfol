@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 import NavLink from '../navlink/NavLink';
 
-const sections = ['Home', 'About', 'Gallery', 'Contact', 'FAQ'];
+const sections = ['Home', 'About', 'Gallery', 'FAQ'];
 const SlideNav = ({ isOpen, onClick }) => {
   return (
     <Nav isOpen={isOpen}>
