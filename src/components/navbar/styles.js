@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Flex as FlexComponent } from '../flex';
+import { Flex as FlexComponent } from '../Flex';
 
 export const Flex = styled(FlexComponent)`
   width: 100%;

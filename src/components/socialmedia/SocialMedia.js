@@ -1,12 +1,12 @@
 import React from 'react'
 import { Divider, Container, Anchor } from './styles';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
-import { Flex } from '../flex';
+import { Flex } from '../Flex';
 
 const SocialMedia = () => {
     return (
         <Container>
-            <Anchor href="tel:++57 310 6595083">+57 310 6595083</Anchor>
+            <Anchor href="https://api.whatsapp.com/send?phone=573106595083">+57 310 6595083</Anchor>
             <Divider />
             <Flex>
                 <Anchor

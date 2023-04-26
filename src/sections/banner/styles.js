@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FaPhone } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 import { breakPoints } from '../../styles/breakPoints';
 export const Video = styled.video`
   height: 100vh;
@@ -59,6 +59,6 @@ export const Button = styled.button`
   }
 `;
 
-export const PhoneIcon = styled(FaPhone)`
+export const PhoneIcon = styled(FaWhatsapp)`
   font-size: 12px;
 `;
