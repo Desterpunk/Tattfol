@@ -1,6 +1,8 @@
 import React from 'react'
 import * as Scroll from 'react-scroll';
 import { Button, Container, Logo, PhoneIcon, Video } from './styles';
+import bannerMP4 from './video/banner.mp4';
+import bannerWebm from './video/banner.webm';
 const Banner = () => {
   return (
     <section>
@@ -9,7 +11,8 @@ const Banner = () => {
           <React.Fragment>
             <Logo src="https://thelogocompany.net/wp-content/uploads/2022/03/tattoogear-tattoo8.png" />
             <Video autoPlay muted loop>
-              <source src="/video/banner.mp4" type="video/mp4" />
+              <source src={bannerMP4} type="video/mp4" />
+              <source src={bannerWebm} type="video/webm" />
             </Video>
             <Scroll.Link to="contact-sesion" smooth duration={1100}>
               <Button aria-label="Button to Contact Section">
