@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flex, Heading, List, Nav, Anchor } from './styles'
-import { FaFacebook, FaInstagram, FaPhone } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+
 import NavLink from '../navlink/NavLink';
 
 const sections = ['Home', 'About', 'Gallery', 'Contact', 'FAQ'];
@@ -35,8 +36,8 @@ const SlideNav = ({ isOpen, onClick }) => {
             <FaFacebook
               style={{ color: 'rgba(255,255,255)', fontSize: '18px' }} />
           </Anchor>
-          <Anchor href="tel:+57 310 6595083">
-            <FaPhone style={{ color: 'rgba(255,255,255)', fontSize: '18px' }} />
+          <Anchor href="https://api.whatsapp.com/send?phone=573106595083">
+            <FaWhatsapp style={{ color: 'rgba(255,255,255)', fontSize: '18px' }} />
           </Anchor>
         </Flex>
       </Flex>
