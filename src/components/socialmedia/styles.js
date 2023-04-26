@@ -10,7 +10,7 @@ export const Container = styled(Flex)`
   background-color: hsla(0, 60%, 35%, 0.6);
   display: none;
 
-  ${breakPoints.mobileL} {
+  ${breakPoints.laptop} {
     display: flex;
     flex-direction: row;
     align-items: center;
