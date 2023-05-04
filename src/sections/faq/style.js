@@ -1,4 +1,3 @@
-import * as React from 'react';
 import styled from 'styled-components';
 import { breakPoints } from '../../styles/breakPoints';
 

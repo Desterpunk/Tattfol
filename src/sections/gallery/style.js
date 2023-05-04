@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Flex } from '../../components/Flex';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+import Slider from 'react-slick';
 
 export const Container = styled(Flex)`
   justify-content: center;
@@ -15,21 +16,40 @@ export const ImgContainer = styled.div`
   width: 100%;
   z-index: 10;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+`
+
+
+export const Carrousel = styled.div`
+padding: 5rem;
+color: white;
+height: 100vh;
+display:flex;
+flex-direction:column;
+`
+
+export const Slide = styled(Slider)`
+  & .slick-slide div{
+    margin: 0 1rem;
+  }
+
+  & .slick-next {
+    right: -40px !important;
+  }
+
+  & .slick-dots li.slick-active button:before{
+    color: hsla(0, 60%, 35%, 0.6) ;
+
+  }
+
+  & .slick-dots li button:before {
+    color: #fff;
+    font-size: 0.5rem;
+    top: 1rem;
+  }
 `
 
 export const FullImg = styled.img`
-  width: 500px;
-  height: 500px;
-  cursor: pointer;
-  transition: filter 0.2s ease;
-  object-fit: cover;
-  display: inline;
-  border: 4px solid #000;
-  margin: 10px 0;
-  transition: .2s linear;
+  height: 300px;
 `
 
 export const LogoLeft = styled(FaAngleLeft)`
