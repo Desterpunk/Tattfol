@@ -16,6 +16,8 @@ export const ImgContainer = styled.div`
   width: 100%;
   z-index: 10;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
 `
 
 
