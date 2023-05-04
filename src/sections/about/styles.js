@@ -14,7 +14,7 @@ export const Image = styled.div`
   border: 2px solid #fff;
   margin: 0 0 30px 0;
 
-  ${breakPoints.laptop} {
+  ${breakPoints.mobileS} {
     width: 170px;
     height: 170px;
     margin: 0 70px 0 0;
@@ -40,7 +40,35 @@ export const Highlight = styled.span`
 `;
 
 export const ImageTextContainer = styled(ColumnContainer)`
-  ${breakPoints.laptop} {
+  ${breakPoints.tablet} {
     flex-direction: row;
   }
+`;
+
+export const Container = styled.div`
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1px 10px;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin: 10px 10px;
+`;
+
+export const FaqContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    ${breakPoints.laptopL} {
+    flex-direction: row;
+    }
+`;
+
+export const Question = styled(Text)`
+    color: hsl(0, 60%, 35%);
+    margin-bottom: 25px;
+    font-weight: 100;
+    font-size: 22px;
 `;
