@@ -16,17 +16,15 @@ export const ImgContainer = styled.div`
   width: 100%;
   z-index: 10;
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
 `
 
 
 export const Carrousel = styled.div`
 padding: 5rem;
 color: white;
-height: 100vh;
 display:flex;
 flex-direction:column;
+justify-content: center;
 `
 
 export const Slide = styled(Slider)`
