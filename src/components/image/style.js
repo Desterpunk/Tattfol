@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { breakPoints } from "../../styles/breakPoints";
 
 export const ImageComponent = styled.img`
-  width: 160px;
-  height: 160px;
+  width: 320px;
+  height: 320px;
   cursor: pointer;
   display: block;
   transition: filter 0.2s ease;

@@ -61,7 +61,7 @@ export const FaqContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    ${breakPoints.tablet} {
+    ${breakPoints.laptopL} {
     flex-direction: row;
     }
 `;
