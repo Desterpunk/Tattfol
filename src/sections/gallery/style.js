@@ -16,16 +16,22 @@ export const ImgContainer = styled.div`
   background: rgba(0,0,0,.9);
   height: 100%;
   width: 100%;
-  z-index: 10;
+  z-index: 110;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 export const InnerDiv = styled.div`
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
   margin-top: 0px;
+
+
+  ${breakPoints.laptopL} {
+    width: 50%;
+  height: 50%;
+  }
 `;
 
 
@@ -34,13 +40,7 @@ color: white;
 display:flex;
 flex-direction:column;
 justify-content: center;
-height: 320px;
-width: 220px;
 
-${breakPoints.mobileL} {
-  height: auto;
-  width: auto;
-  }
 `
 
 export const Slide = styled(Slider)`

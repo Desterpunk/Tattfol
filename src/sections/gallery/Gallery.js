@@ -32,14 +32,14 @@ const Gallery = () => {
             {
                 breakpoint: 1440,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }
             },
             {
-                breakpoint: 1024,
+                breakpoint: 930,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -47,7 +47,7 @@ const Gallery = () => {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 580 ,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -82,13 +82,13 @@ const Gallery = () => {
                 </Scroll.Element>
             </SectionContainer >
             {isOpen && (
-                <ImgContainer>
-                    <InnerDiv>
+                <ImgContainer onClick={handleOnClose}>
+                    <InnerDiv >
                         <Carrousel>
                             <Slide {...settings}>
                                 {fotos.map((img, index) => (
                                     <FullImg
-                                        onClick={handleOnClose}
+                                        
                                         alt="Picture of a Tattoo"
                                         key={index}
                                         src={img}>
