@@ -5,10 +5,11 @@ import { Container, ImgContainer, FullImg, Carrousel, Slide, InnerDiv } from './
 import Image from '../../components/image/Image';
 import { Heading } from '../../components/Heading';
 import { ColumnContainer } from '../../components/ColumnContainer';
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from 'react';
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+
 const Gallery = () => {
 
 
@@ -53,7 +54,7 @@ const Gallery = () => {
     const settings = {
         dots: true,
         infinite: true,
-        arrows: false,  
+        arrows: false,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -117,13 +118,19 @@ const Gallery = () => {
                         <Carrousel>
                             <Slide {...settings}>
                                 {fotos.map((img, index) => (
-                                    <FullImg
-                                        onClick={handleOnImageClick}
-                                        className="FullImg"
-                                        alt="Picture of a Tattoo"
-                                        key={index}
-                                        src={img}>
-                                    </FullImg>
+                                    <TransformWrapper>
+                                        <TransformComponent>
+                                            <FullImg
+                                                onClick={handleOnImageClick}
+                                                className="FullImg"
+                                                alt="Picture of a Tattoo"
+                                                key={index}
+                                                src={img}>
+                                            </FullImg>
+                                        </TransformComponent>
+                                    </TransformWrapper>
+
+
                                 ))}
                             </Slide>
                         </Carrousel>
