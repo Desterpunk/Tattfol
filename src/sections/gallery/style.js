@@ -51,6 +51,7 @@ export const Slide = styled(Slider)`
   }
 
   & .slick-dots li button:before {
+    padding: 2rem 0;
     color: #fff;
     font-size: 0.5rem;
   }
