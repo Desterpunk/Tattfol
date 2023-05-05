@@ -44,8 +44,8 @@ height: 100%;
 
 export const CloseButton = styled.button`
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     z-index: 1000;
     display: flex;
     border: 0.5px solid white;
@@ -63,8 +63,11 @@ export const CloseButton = styled.button`
 `
 
 export const Slide = styled(Slider)`
-  & .slick-slide div{
+  height: 80%;
 
+  & .slick-slide div{
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   & .slick-next {
