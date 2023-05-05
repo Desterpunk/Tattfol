@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as Scroll from 'react-scroll';
 import { SectionContainer } from '../../components/SectionContainer';
-import { Container, ImgContainer, FullImg, Carrousel, Slide } from './style';
+import { Container, ImgContainer, FullImg, Carrousel, Slide, InnerDiv } from './style';
 import Image from '../../components/image/Image';
 import { Heading } from '../../components/Heading';
 import { ColumnContainer } from '../../components/ColumnContainer';
@@ -23,7 +23,7 @@ const Gallery = () => {
 
     const settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -83,19 +83,20 @@ const Gallery = () => {
             </SectionContainer >
             {isOpen && (
                 <ImgContainer>
-                    <Carrousel>
-                        <Slide {...settings}>
-                            {fotos.map((img, index) => (
-                                <FullImg
-                                    onClick={handleOnClose}
-                                    alt="Picture of a Tattoo"
-                                    key={index}
-                                    src={img}>
-                                </FullImg>
-                            ))}
-                        </Slide>
-                    </Carrousel>
-
+                    <InnerDiv>
+                        <Carrousel>
+                            <Slide {...settings}>
+                                {fotos.map((img, index) => (
+                                    <FullImg
+                                        onClick={handleOnClose}
+                                        alt="Picture of a Tattoo"
+                                        key={index}
+                                        src={img}>
+                                    </FullImg>
+                                ))}
+                            </Slide>
+                        </Carrousel>
+                    </InnerDiv>
                 </ImgContainer>
             )}
         </>

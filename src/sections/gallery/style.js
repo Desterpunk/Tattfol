@@ -10,17 +10,24 @@ export const Container = styled(Flex)`
 
 export const ImgContainer = styled.div`
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   background: rgba(0,0,0,.9);
   height: 100%;
   width: 100%;
   z-index: 10;
-  cursor: pointer;
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const InnerDiv = styled.div`
+  width: 50%;
+  height: 50%;
+`;
 
 
 export const Carrousel = styled.div`
-padding: 5rem;
 color: white;
 display:flex;
 flex-direction:column;
@@ -49,7 +56,10 @@ export const Slide = styled(Slider)`
 `
 
 export const FullImg = styled.img`
-  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  
 `
 
 export const LogoLeft = styled(FaAngleLeft)`
