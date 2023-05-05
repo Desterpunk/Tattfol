@@ -14,8 +14,15 @@ const Gallery = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
 
-    const handleOnClose = () => {
-        setIsOpen(!isOpen);
+    const handleOnClose = (e) => {
+        if (e.target === e.currentTarget) {
+            setIsOpen(false);
+        }
+    };
+
+
+    const handleOnImageClick = (e) => {
+        e.stopPropagation();
     };
 
     const importAll = (r) => r.keys().map(r);
@@ -47,7 +54,7 @@ const Gallery = () => {
                 }
             },
             {
-                breakpoint: 580 ,
+                breakpoint: 580,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -83,12 +90,13 @@ const Gallery = () => {
             </SectionContainer >
             {isOpen && (
                 <ImgContainer onClick={handleOnClose}>
-                    <InnerDiv >
+                    <InnerDiv onClick={handleOnImageClick}>
                         <Carrousel>
                             <Slide {...settings}>
                                 {fotos.map((img, index) => (
                                     <FullImg
-                                        
+                                        onClick={handleOnImageClick}
+                                        className="FullImg"
                                         alt="Picture of a Tattoo"
                                         key={index}
                                         src={img}>

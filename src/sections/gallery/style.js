@@ -20,6 +20,19 @@ export const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:hover:before {
+    cursor: pointer;
+  }
 `;
 
 export const InnerDiv = styled.div`
@@ -30,7 +43,12 @@ export const InnerDiv = styled.div`
 
   ${breakPoints.laptopL} {
     width: 50%;
-  height: 50%;
+    height: 50%;
+  }
+
+  ${breakPoints.mobileM} {
+    width: 80%;
+    height: 80%;
   }
 `;
 
