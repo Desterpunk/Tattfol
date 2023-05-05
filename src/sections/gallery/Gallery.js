@@ -59,6 +59,7 @@ const Gallery = () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: photoIndex,
+        swipe: true,
         responsive: [
             {
                 breakpoint: 1440,
