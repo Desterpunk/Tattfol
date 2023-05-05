@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { Flex } from '../../components/Flex';
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import Slider from 'react-slick';
-import { breakPoints } from '../../styles/breakPoints';
 
 export const Container = styled(Flex)`
   justify-content: center;
@@ -32,23 +30,6 @@ export const ImgContainer = styled.div`
 
   &:hover:before {
     cursor: pointer;
-  }
-`;
-
-export const InnerDiv = styled.div`
-  width: 70%;
-  height: 70%;
-  margin-top: 0px;
-
-
-  ${breakPoints.laptopL} {
-    width: 50%;
-    height: 50%;
-  }
-
-  ${breakPoints.mobileM} {
-    width: 80%;
-    height: 80%;
   }
 `;
 
@@ -89,10 +70,36 @@ export const FullImg = styled.img`
   
 `
 
-export const LogoLeft = styled(FaAngleLeft)`
-  padding: 30px;
+export const InnerDiv = styled.div`
+  width: 90%;
+  height: 90%;
+  margin-top: 0px;
+
+  &.portrait-mode {
+    ${FullImg} {
+      height: 100%;
+      width: auto;
+      position: relative;
+    }
+
+    ${Carrousel} {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    .slick-prev {
+      left: 0;
+    }
+
+    .slick-next {
+      right: 0;
+    }
+
+    .slick-dots {
+      bottom: 40px;
+    }}
 `
 
-export const LogoRight = styled(FaAngleRight)`
-    padding: 30px;
-`
+
