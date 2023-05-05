@@ -44,8 +44,8 @@ height: 100%;
 
 export const CloseButton = styled.button`
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     z-index: 1000;
     display: flex;
     border: 0.5px solid white;
@@ -64,7 +64,7 @@ export const CloseButton = styled.button`
 
 export const Slide = styled(Slider)`
   & .slick-slide div{
-    margin: 0 1rem;
+
   }
 
   & .slick-next {
@@ -107,9 +107,7 @@ export const InnerDiv = styled.div`
 
     ${Carrousel} {
       position: absolute;
-      bottom: 0;
       width: 100%;
-      padding: 1rem;
     }
 
     .slick-prev {
@@ -118,10 +116,6 @@ export const InnerDiv = styled.div`
 
     .slick-next {
       right: 0;
-    }
-
-    .slick-dots {
-      bottom: 40px;
     }}
 `
 
