@@ -26,7 +26,7 @@ export const Text = styled(TextComponent)`
   text-align: center;
   color: #fff;
 
-  ${breakPoints.laptop} {
+  ${breakPoints.tablet} {
     text-align: left;
     line-height: 40px;
     max-width: 550px;
@@ -61,7 +61,7 @@ export const FaqContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    ${breakPoints.laptopL} {
+    ${breakPoints.tablet} {
     flex-direction: row;
     }
 `;
