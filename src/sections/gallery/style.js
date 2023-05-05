@@ -34,6 +34,13 @@ color: white;
 display:flex;
 flex-direction:column;
 justify-content: center;
+height: 320px;
+width: 220px;
+
+${breakPoints.mobileL} {
+  height: auto;
+  width: auto;
+  }
 `
 
 export const Slide = styled(Slider)`
@@ -51,7 +58,7 @@ export const Slide = styled(Slider)`
   }
 
   & .slick-dots li button:before {
-    padding: 2rem 0;
+    padding: 1rem 0;
     color: #fff;
     font-size: 0.5rem;
   }
@@ -61,11 +68,6 @@ export const FullImg = styled.img`
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  height: 320px;
-
-  ${breakPoints.tablet} {
-    height:240px ;
-  }
   
 `
 
