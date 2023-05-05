@@ -38,8 +38,28 @@ display:flex;
 flex-direction:column;
 justify-content: center;
 width: 100%;
-height: 90%;
+height: 100%;
 
+`
+
+export const CloseButton = styled.button`
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    border: 0.5px solid white;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 300;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: white;
+      color: hsl(0, 60%, 40%);
+    }
 `
 
 export const Slide = styled(Slider)`

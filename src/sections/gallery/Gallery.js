@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as Scroll from 'react-scroll';
 import { SectionContainer } from '../../components/SectionContainer';
-import { Container, ImgContainer, FullImg, Carrousel, Slide, InnerDiv } from './style';
+import { Container, ImgContainer, FullImg, Carrousel, Slide, InnerDiv, CloseButton } from './style';
 import Image from '../../components/image/Image';
 import { Heading } from '../../components/Heading';
 import { ColumnContainer } from '../../components/ColumnContainer';
@@ -115,6 +115,8 @@ const Gallery = () => {
             {isOpen && (
                 <ImgContainer onClick={handleOnClose}>
                     <InnerDiv onClick={handleOnImageClick} className={isPortrait ? "portrait-mode" : ""}>
+                        <CloseButton className="close-button" onClick={handleOnClose}>Close</CloseButton>
+
                         <Carrousel>
                             <Slide {...settings}>
                                 {fotos.map((img, index) => (
