@@ -32,8 +32,8 @@ const Gallery = () => {
             {
                 breakpoint: 1440,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }

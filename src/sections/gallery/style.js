@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Flex } from '../../components/Flex';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import Slider from 'react-slick';
+import { breakPoints } from '../../styles/breakPoints';
 
 export const Container = styled(Flex)`
   justify-content: center;
@@ -24,6 +25,7 @@ export const ImgContainer = styled.div`
 export const InnerDiv = styled.div`
   width: 50%;
   height: 50%;
+  margin-top: 0px;
 `;
 
 
@@ -51,7 +53,6 @@ export const Slide = styled(Slider)`
   & .slick-dots li button:before {
     color: #fff;
     font-size: 0.5rem;
-    top: 1rem;
   }
 `
 
@@ -59,6 +60,11 @@ export const FullImg = styled.img`
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  height: 320px;
+
+  ${breakPoints.tablet} {
+    height:240px ;
+  }
   
 `
 
