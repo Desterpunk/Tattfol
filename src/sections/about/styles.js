@@ -12,9 +12,9 @@ export const Image = styled.div`
   height: 170px;
   flex-shrink: 0;
   border: 2px solid #fff;
-  margin: 0 0 30px 0;
+  margin: 0 0px 0px 0;
 
-  ${breakPoints.mobileS} {
+  ${breakPoints.tablet} {
     width: 170px;
     height: 170px;
     margin: 0 70px 0 0;
