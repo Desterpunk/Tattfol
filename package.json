@@ -1,6 +1,6 @@
 {
   "name": "tattoo-portfolio",
-  "homepage": "https://Desterpunk.github.io/Tattfol",
+  "homepage": "http://localhost:3000/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

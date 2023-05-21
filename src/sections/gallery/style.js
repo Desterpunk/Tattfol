@@ -29,6 +29,7 @@ export const ImgContainer = styled.div`
   &:hover:before {
     cursor: pointer;
   }
+  
 `;
 
 
@@ -68,6 +69,7 @@ export const Slide = styled(Slider)`
   & .slick-slide div{
     padding-left: 5px;
     padding-right: 5px;
+    max-height:700px;
   }
 
   & .slick-next {
@@ -90,7 +92,7 @@ export const FullImg = styled.img`
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  
+  width: 100%;
 `
 
 export const InnerDiv = styled.div`

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {  useState,useEffect } from 'react'
 import * as Scroll from 'react-scroll';
 import { SectionContainer } from '../../components/SectionContainer';
 import { Container, ImgContainer, FullImg, Carrousel, Slide, InnerDiv, CloseButton } from './style';
@@ -7,7 +7,6 @@ import { Heading } from '../../components/Heading';
 import { ColumnContainer } from '../../components/ColumnContainer';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useEffect } from 'react';
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 const Gallery = () => {
@@ -15,7 +14,6 @@ const Gallery = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0);
-
     const [isPortrait, setIsPortrait] = useState(window.matchMedia("(orientation: portrait)").matches);
 
     useEffect(() => {
@@ -121,7 +119,7 @@ const Gallery = () => {
                         <Carrousel>
                             <Slide {...settings}>
                                 {fotos.map((img, index) => (
-                                    <TransformWrapper>
+                                    <TransformWrapper key={index}>
                                         <TransformComponent>
                                             <FullImg
                                                 onClick={handleOnImageClick}
@@ -132,8 +130,6 @@ const Gallery = () => {
                                             </FullImg>
                                         </TransformComponent>
                                     </TransformWrapper>
-
-
                                 ))}
                             </Slide>
                         </Carrousel>

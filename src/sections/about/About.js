@@ -18,7 +18,7 @@ const About = () => {
             <FaqContainer>
               <Container>
                 <Text>
-                  Hi there, my name is Ferney and I am one of two tattoo artists here at <Highlight>Studio D'S</Highlight>. With over 8 years of experience, my brother and I are committed to providing the highest quality of tattoo artistry to our clients.
+                  Hi there, my name is Ferney and With my brother Andres we're two tattoo artists here at <Highlight>Studio D'S</Highlight>. With over 8 years of experience, my brother and I are committed to providing the highest quality of tattoo artistry to our clients.
                 </Text>
               </Container>
               <Container>
