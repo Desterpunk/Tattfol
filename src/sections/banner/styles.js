@@ -22,7 +22,7 @@ export const Logo = styled.img.attrs({ alt: 'Logo of Tattoo D' })`
   position: relative;
   z-index: 1;
   width: 200px;
-  opacity: 0.6;
+  opacity: 1;
 
   ${breakPoints.tablet} {
     width: 300px;

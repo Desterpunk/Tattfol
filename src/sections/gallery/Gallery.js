@@ -1,4 +1,4 @@
-import React, {  useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import * as Scroll from 'react-scroll';
 import { SectionContainer } from '../../components/SectionContainer';
 import { Container, ImgContainer, FullImg, Carrousel, Slide, InnerDiv, CloseButton } from './style';
@@ -7,7 +7,6 @@ import { Heading } from '../../components/Heading';
 import { ColumnContainer } from '../../components/ColumnContainer';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 const Gallery = () => {
 
@@ -32,15 +31,15 @@ const Gallery = () => {
 
 
     const handleOnClose = (e) => {
+        if (e.target.classList.contains("FullImg")) {
+            e.stopPropagation();
+            return;
+        }
         if (e.target === e.currentTarget) {
             setIsOpen(false);
         }
     };
 
-
-    const handleOnImageClick = (e) => {
-        e.stopPropagation();
-    };
 
     const handleOnPortraitModeChange = (e) => {
         setIsPortrait(e.matches);
@@ -113,23 +112,18 @@ const Gallery = () => {
             </SectionContainer >
             {isOpen && (
                 <ImgContainer onClick={handleOnClose}>
-                    <InnerDiv onClick={handleOnImageClick} className={isPortrait ? "portrait-mode" : ""}>
+                    <InnerDiv className={isPortrait ? "portrait-mode" : ""}>
                         <CloseButton className="close-button" onClick={handleOnClose}>Close</CloseButton>
 
                         <Carrousel>
                             <Slide {...settings}>
                                 {fotos.map((img, index) => (
-                                    <TransformWrapper key={index}>
-                                        <TransformComponent>
-                                            <FullImg
-                                                onClick={handleOnImageClick}
-                                                className="FullImg"
-                                                alt="Picture of a Tattoo"
-                                                key={index}
-                                                src={img}>
-                                            </FullImg>
-                                        </TransformComponent>
-                                    </TransformWrapper>
+                                    <FullImg
+                                        className="FullImg"
+                                        alt="Picture of a Tattoo"
+                                        key={index}
+                                        src={img}>
+                                    </FullImg>
                                 ))}
                             </Slide>
                         </Carrousel>

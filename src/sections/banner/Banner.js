@@ -3,6 +3,8 @@ import * as Scroll from 'react-scroll';
 import { Button, Container, Logo, PhoneIcon, Video } from './styles';
 import bannerMP4 from './video/banner.mp4';
 import bannerWebm from './video/banner.webm';
+import logoPNG from './image/Logo-removebg.png'
+
 const Banner = () => {
 
   const handleAppoinmentButton = () => {
@@ -14,10 +16,10 @@ const Banner = () => {
       <Scroll.Element name="home-section">
         <Container>
           <React.Fragment>
-            <Logo src="https://thelogocompany.net/wp-content/uploads/2022/03/tattoogear-tattoo8.png" />
-            <Video autoPlay muted loop>
-              <source src={bannerMP4} type="video/mp4" />
-              <source src={bannerWebm} type="video/webm" />
+            <Logo src={logoPNG}/>
+            <Video autoPlay muted loop play>
+              <source src={bannerWebm} type="video/mp4" />
+              <source src={bannerMP4} type="video/webm" />
             </Video>
             <Scroll.Link to="contact-sesion" smooth duration={1100}>
               <Button aria-label="Button to Contact Section" onClick={handleAppoinmentButton}>

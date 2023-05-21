@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { breakPoints } from '../../styles/breakPoints';
 import { Flex } from '../../components/Flex';
-import zotoJPG from './image/zoro.jpg';
+import logo from './image/Logo-removebg.png';
 
 export const FooterContainer = styled(Flex)`
     background-color: black;
@@ -26,13 +26,13 @@ export const Link = styled.a`
 `;
 
 export const Image = styled.div`
-  background:url(${zotoJPG});
+  background:url(${logo});
   background-position: center;
   background-size: cover;
-  width: 55px;
-  height: 55px;
+  width: 100px;
+  height: 100px;
   flex-shrink: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 
   ${breakPoints.laptop} {
     margin: 0 20px 0 0;
