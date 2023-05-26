@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { breakPoints } from '../../styles/breakPoints';
-import { Flex } from '../flex';
-import { Anchor as AnchorComponent } from '../anchor';
+import { Flex } from '../Flex';
+import { Anchor as AnchorComponent } from '../Anchor';
 
 export const Container = styled(Flex)`
   align-items: flex-end;

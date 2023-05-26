@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { breakPoints } from '../../styles/breakPoints';
-import { Flex } from '../../components/flex';
+import { Flex } from '../../components/Flex';
 import logo from './image/Logo-removebg.png';
 
 export const FooterContainer = styled(Flex)`
