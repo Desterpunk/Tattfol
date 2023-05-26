@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { breakPoints } from '../../styles/breakPoints';
-import { Flex as FlexComponent } from '../Flex';
-import { Anchor as AnchorComponent } from '../Anchor';
+import { Flex as FlexComponent } from '../flex';
+import { Anchor as AnchorComponent } from '../anchor';
 
 export const Nav = styled.nav`
   transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);

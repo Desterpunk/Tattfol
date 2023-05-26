@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Flex } from '../../components/Flex';
+import { Flex } from '../../components/flex';
 import Slider from 'react-slick';
 
 export const Container = styled(Flex)`

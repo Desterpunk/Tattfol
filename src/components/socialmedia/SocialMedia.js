@@ -1,7 +1,7 @@
 import React from 'react'
 import { Divider, Container, Anchor } from './styles';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
-import { Flex } from '../Flex';
+import { Flex } from '../flex';
 
 const SocialMedia = () => {
     return (
