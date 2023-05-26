@@ -8,7 +8,7 @@ import logoPNG from './image/Logo-removebg.png'
 const Banner = () => {
 
   const handleAppoinmentButton = () => {
-    window.location = `https://api.whatsapp.com/send?phone=573106595083`;
+    window.location = `https://api.whatsapp.com/send?phone=573223080409`;
   }
 
   return (
