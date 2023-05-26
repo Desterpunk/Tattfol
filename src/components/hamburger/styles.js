@@ -7,7 +7,7 @@ export const Container = styled.span`
   z-index: 101;
   padding: 20px;
   height: 100%;
-  background-color: hsla(0, 60%, 35%, 0.6);
+  background-color: rgb(36,35,35);
   
 `;
 

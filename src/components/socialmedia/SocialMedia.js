@@ -6,13 +6,13 @@ import { Flex } from '../Flex';
 const SocialMedia = () => {
     return (
         <Container>
-            <Anchor href="https://api.whatsapp.com/send?phone=573106595083">+57 310 6595083</Anchor>
+            <Anchor href="https://api.whatsapp.com/send?phone=573223080409">+57 322 3080409</Anchor>
             <Divider />
             <Flex>
                 <Anchor
                     target='_blank'
                     aria-label="Go to D's Instagram page"
-                    href='https://instagram.com/ferney_durango_art?igshid=OGRjNzg3M2Y='>
+                    href='https://instagram.com/studiodsmedellin?igshid=NTc4MTIwNjQ2YQ=='>
                     <FaInstagram />
                 </Anchor>
                 <Anchor

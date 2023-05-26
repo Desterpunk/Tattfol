@@ -1,25 +1,19 @@
 import styled from 'styled-components';
 import { Text as TextComponent } from '../../components/Text';
 import { ColumnContainer } from '../../components/ColumnContainer';
-import zotoJPG from './image/zoro.jpg';
 import { breakPoints } from '../../styles/breakPoints';
 
-export const Image = styled.div`
-  border-radius: 50%;
-  background:url(${zotoJPG});
-  background-size: contain;
+export const Logo = styled.img.attrs({ alt: 'Logo of Tattoo D' })`
+  position: relative;
+  z-index: 1;
   width: 170px;
-  height: 170px;
-  flex-shrink: 0;
-  border: 2px solid #fff;
-  margin: 0 0px 0px 0;
+  opacity: 1;
 
   ${breakPoints.tablet} {
     width: 170px;
-    height: 170px;
-    margin: 0 70px 0 0;
   }
 `;
+
 
 export const Text = styled(TextComponent)`
   line-height: 35px;
@@ -67,7 +61,7 @@ export const FaqContainer = styled.div`
 `;
 
 export const Question = styled(Text)`
-    color: hsl(0, 60%, 35%);
+    color: white;
     margin-bottom: 25px;
     font-weight: 100;
     font-size: 22px;

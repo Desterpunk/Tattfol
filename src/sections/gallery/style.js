@@ -59,7 +59,7 @@ export const CloseButton = styled.button`
 
     &:hover {
       background-color: white;
-      color: hsl(0, 60%, 40%);
+      color: rgb(36,35,35);
     }
 `
 
@@ -77,7 +77,7 @@ export const Slide = styled(Slider)`
   }
 
   & .slick-dots li.slick-active button:before{
-    color: hsla(0, 60%, 35%, 0.6) ;
+    color: rgb(36,35,35);
 
   }
 

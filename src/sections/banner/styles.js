@@ -55,7 +55,7 @@ export const Button = styled.button`
 
   &:hover {
     background-color: white;
-    color: hsl(0, 60%, 40%);
+    color: rgb(36,35,35);
   }
 `;
 

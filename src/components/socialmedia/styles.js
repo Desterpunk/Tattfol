@@ -7,7 +7,7 @@ export const Container = styled(Flex)`
   align-items: flex-end;
   z-index: 1;
   padding: 20px;
-  background-color: hsla(0, 60%, 35%, 0.6);
+  background-color: rgb(36,35,35);
   display: none;
 
   ${breakPoints.laptop} {

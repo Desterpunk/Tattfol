@@ -38,7 +38,7 @@ export const Text = styled.span`
 `;
 
 export const Question = styled(Text)`
-    color: hsl(0, 60%, 35%);
+    color: white;
     margin-bottom: 25px;
     font-weight: 100;
     font-size: 22px;

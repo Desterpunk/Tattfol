@@ -25,7 +25,7 @@ const SlideNav = ({ isOpen, onClick }) => {
           <Anchor
             target='_blank'
             aria-label="Go to D's Instagram page"
-            href='https://instagram.com/ferney_durango_art?igshid=OGRjNzg3M2Y='>
+            href='https://instagram.com/studiodsmedellin?igshid=NTc4MTIwNjQ2YQ=='>
             <FaInstagram
               style={{ color: 'rgba(255,255,255)', fontSize: '18px' }} />
           </Anchor>
@@ -36,7 +36,7 @@ const SlideNav = ({ isOpen, onClick }) => {
             <FaFacebook
               style={{ color: 'rgba(255,255,255)', fontSize: '18px' }} />
           </Anchor>
-          <Anchor href="https://api.whatsapp.com/send?phone=573106595083">
+          <Anchor href="https://api.whatsapp.com/send?phone=573223080409">
             <FaWhatsapp style={{ color: 'rgba(255,255,255)', fontSize: '18px' }} />
           </Anchor>
         </Flex>

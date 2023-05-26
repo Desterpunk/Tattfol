@@ -4,7 +4,9 @@ import * as Scroll from 'react-scroll';
 import { SectionContainer } from '../../components/SectionContainer'
 import { ColumnContainer } from '../../components/ColumnContainer';
 import { Heading } from '../../components/Heading';
-import { Image, Text, ImageTextContainer, Highlight, FaqContainer, Container } from './styles';
+import { Logo, Text, ImageTextContainer, Highlight, FaqContainer, Container } from './styles';
+import logoPNG from './image/Logo-removebg.png'
+
 const About = () => {
   return (
     <SectionContainer>
@@ -14,7 +16,7 @@ const About = () => {
             About
           </Heading>
           <ImageTextContainer>
-            <Image />
+          <Logo src={logoPNG}/>
             <FaqContainer>
               <Container>
                 <Text>

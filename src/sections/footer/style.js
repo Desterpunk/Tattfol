@@ -19,10 +19,10 @@ export const FooterContainer = styled(Flex)`
 `;
 
 export const Link = styled.a`
-  color: hsl(0, 60%, 40%);
+  color: rgb(36,35,35);
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 2px solid hsl(0, 60%, 40%);
+  border-bottom: 2px solid rgb(36,35,35);
 `;
 
 export const Image = styled.div`
