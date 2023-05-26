@@ -18,8 +18,8 @@ const Banner = () => {
           <React.Fragment>
             <Logo src={logoPNG}/>
             <Video autoPlay loop muted playsInline>
-              <source src={bannerWebm} type="video/webm" />
               <source src={bannerMP4} type="video/mp4" />
+              <source src={bannerWebm} type="video/webm" />
             </Video>
             <Scroll.Link to="contact-sesion" smooth duration={1100}>
               <Button aria-label="Button to Contact Section" onClick={handleAppoinmentButton}>
