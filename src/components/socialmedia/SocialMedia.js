@@ -1,6 +1,6 @@
 import React from 'react'
 import { Divider, Container, Anchor } from './styles';
-import { FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 import { Flex } from '../Flex';
 
 const SocialMedia = () => {
@@ -14,12 +14,6 @@ const SocialMedia = () => {
                     aria-label="Go to D's Instagram page"
                     href='https://instagram.com/studiodsmedellin?igshid=NTc4MTIwNjQ2YQ=='>
                     <FaInstagram />
-                </Anchor>
-                <Anchor
-                    target='_blank'
-                    aria-label="Go to D's Facebook page"
-                    href='https://www.facebook.com/ferney.durango.3597'>
-                    <FaFacebook />
                 </Anchor>
             </Flex>
         </Container>

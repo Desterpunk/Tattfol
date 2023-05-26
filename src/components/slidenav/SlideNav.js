@@ -1,6 +1,6 @@
 import React from 'react'
 import { Flex, Heading, List, Nav, Anchor } from './styles'
-import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 import NavLink from '../navlink/NavLink';
 
@@ -27,13 +27,6 @@ const SlideNav = ({ isOpen, onClick }) => {
             aria-label="Go to D's Instagram page"
             href='https://instagram.com/studiodsmedellin?igshid=NTc4MTIwNjQ2YQ=='>
             <FaInstagram
-              style={{ color: 'rgba(255,255,255)', fontSize: '18px' }} />
-          </Anchor>
-          <Anchor
-            target='_blank'
-            aria-label="Go to D's Facebook page"
-            href='https://www.facebook.com/ferney.durango.3597'>
-            <FaFacebook
               style={{ color: 'rgba(255,255,255)', fontSize: '18px' }} />
           </Anchor>
           <Anchor href="https://api.whatsapp.com/send?phone=573223080409">
