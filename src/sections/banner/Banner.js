@@ -17,7 +17,7 @@ const Banner = () => {
         <Container>
           <React.Fragment>
             <Logo src={logoPNG}/>
-            <Video autoPlay muted loop play>
+            <Video autoPlay loop muted playsInline>
               <source src={bannerWebm} type="video/mp4" />
               <source src={bannerMP4} type="video/webm" />
             </Video>

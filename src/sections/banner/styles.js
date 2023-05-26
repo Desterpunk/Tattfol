@@ -6,7 +6,7 @@ export const Video = styled.video`
   width: 100%;
   object-fit: cover;
   position: absolute;
-  z-index: 0;
+
 `;
 
 export const Container = styled.div`
