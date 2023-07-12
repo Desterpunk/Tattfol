@@ -12,7 +12,7 @@ const SocialMedia = () => {
                 <Anchor
                     target='_blank'
                     aria-label="Go to D's Instagram page"
-                    href='https://instagram.com/studiodsmedellin?igshid=NTc4MTIwNjQ2YQ=='>
+                    href='https://www.instagram.com/studiods.medellin/'>
                     <FaInstagram />
                 </Anchor>
             </Flex>

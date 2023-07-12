@@ -25,7 +25,7 @@ const SlideNav = ({ isOpen, onClick }) => {
           <Anchor
             target='_blank'
             aria-label="Go to D's Instagram page"
-            href='https://instagram.com/studiodsmedellin?igshid=NTc4MTIwNjQ2YQ=='>
+            href='https://www.instagram.com/studiods.medellin/'>
             <FaInstagram
               style={{ color: 'rgba(255,255,255)', fontSize: '18px' }} />
           </Anchor>
