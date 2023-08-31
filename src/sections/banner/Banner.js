@@ -4,6 +4,7 @@ import { Button, Container, Logo, PhoneIcon, Video } from './styles';
 import bannerMP4 from './video/banner.mp4';
 import bannerWebm from './video/banner.webm';
 import logoPNG from './image/Logo-removebg.png'
+import { Tilt } from 'react-tilt';
 
 const Banner = () => {
 
@@ -16,7 +17,9 @@ const Banner = () => {
       <Scroll.Element name="home-section">
         <Container>
           <React.Fragment>
-            <Logo src={logoPNG}/>
+            <Tilt className = "z-10">
+              <Logo src={logoPNG} />
+            </Tilt>
             <Video autoPlay loop muted playsInline>
               <source src={bannerMP4} type="video/mp4" />
               <source src={bannerWebm} type="video/webm" />

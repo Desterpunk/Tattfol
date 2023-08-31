@@ -7,6 +7,8 @@ import About from './sections/about/About';
 import Gallery from './sections/gallery/Gallery';
 import Faq from './sections/faq/Faq';
 import Footer from './sections/footer/Footer';
+import StarsCanvas from './components/canvas/Stars';
+import './index.css'
 
 const AppContainer = styled.div`
   width: 100%;
@@ -19,16 +21,19 @@ function App() {
   return (
     <div className="App">
       <AppContainer>
-        <GlobalStyle/>
+        <GlobalStyle />
         <header>
-          <NavBar/>
+          <NavBar />
         </header>
         <main>
-          <Banner/>
-          <About/>
-          <Gallery/>
-          <Faq/>
-          <Footer/>
+          <Banner />
+          <About />
+          <Gallery />
+          <Faq />
+          <div className="relative z-10">
+            <Footer />
+            <StarsCanvas />
+          </div>
         </main>
       </AppContainer>
     </div>
